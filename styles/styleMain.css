@@ -1,1 +1,90 @@
+
 @charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
+body {
+    font-family: 'poppins';
+    font-size: 1em;
+}
+
+.menu-container > img {
+    max-width: 2em;
+    margin: 1.5em ;
+}
+
+.top-container {
+    display: flex;
+    margin:  2em 5em;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.top-container > article.content {
+    width: 50%;
+    text-align: start;
+}
+
+.top-container > article.content > h1 {
+    font-size: 2em;
+    font-weight: bolder;
+    margin: 20px auto 0px auto;
+    max-width: 80%;
+    text-indent: 30px;
+}
+
+.top-container > article.content > h2 {
+    font-size: 1.2em;
+    margin: 0px auto 30px auto;
+    max-width: 70%;
+    word-spacing: 5px;
+    line-height: 20px;
+    text-indent: 30px;
+}
+
+
+.top-container > article.content > p {
+    margin: 20px auto;
+    max-width: 80%;
+    word-spacing: 5px;
+    line-height: 20px;
+    text-indent: 30px;
+}
+
+.top-container > article.picture {
+    width: 70%;
+    font-weight: bold;
+    text-shadow: #0000005d 3px 2px 5px;
+}
+
+.top-container > article.picture > img {
+    margin: 20px auto -10px auto;
+    max-width: 30%;
+    border-radius: 10px;
+}
+
+.status-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(90deg, #FFD700 50%, #FF8C00);
+    text-shadow: #0000005d 3px 2px 5px;
+}
+
+.status-container > .status-item {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.status-container > .status-item > span {
+    display: block;
+    font-size: 2em;
+}
+
+.status-container > .status-item > p {
+    margin: 0;
+    font-size: 1em;
+}
