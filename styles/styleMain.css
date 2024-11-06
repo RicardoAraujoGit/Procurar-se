@@ -3,6 +3,9 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'poppins';
@@ -43,7 +46,6 @@ body {
     text-indent: 30px;
 }
 
-
 .top-container > article.content > p {
     margin: 20px auto;
     max-width: 80%;
@@ -60,16 +62,23 @@ body {
 
 .top-container > article.picture > img {
     margin: 20px auto -10px auto;
-    max-width: 30%;
+    max-width: 55%;
     border-radius: 10px;
+    box-shadow: #00000023 0px 0px 30px 1px;
+    transition: 0.3s;
+}
+
+.top-container > article.picture > img:hover {
+    transition: 0.5s;
+    max-width: 55.5%;
 }
 
 .status-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 20px;
-    background: linear-gradient(90deg, #FFD700 50%, #FF8C00);
+    padding: 20px 0px 30px 0px;
+    background: linear-gradient(90deg, #ffda08 50%, #fd9902);
     text-shadow: #0000005d 3px 2px 5px;
 }
 
@@ -81,10 +90,161 @@ body {
 
 .status-container > .status-item > span {
     display: block;
-    font-size: 2em;
+    font-size: 3em;
+    transition: 0.5s;
+}
+
+.status-container > .status-item > span:hover{
+    text-shadow: #ffffff 0px 0px 10px;
+    transition: 0.5s;
 }
 
 .status-container > .status-item > p {
     margin: 0;
-    font-size: 1em;
+    font-size: 1.2em;
+}
+
+/* cards de apresentação dos trabalhos artesanais*/
+
+.middle-container {
+    background-image: url("../images/icons/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0px;
+    height: 900px;
+    padding: 2px;
+}
+
+.middle-container > .content {
+    font-size: 2em;
+    font-weight: bolder;
+    margin: 20px 0px 0px 7%;
+    max-width: 28%;
+    text-indent: 30px;
+    text-shadow: #00000056 0px 0px 5px;
+    background-color: #ffffffc5;
+    border-radius: 10px;
+    box-shadow: inset #00000017 0px 0px 5px 0px;
+}
+
+.card-container {
+    margin: 5% 10%;
+    display: flex;
+    gap: 130px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-container > .card-item {
+    background-color: #f7f7f7e8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #00000004;
+    padding: 7px;
+    width: 300px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card-container > .card-item > img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-container > .card-item > p {
+    color: #666;
+    margin-bottom: 2px;
+    text-shadow: #00000048 0px 0px 2px;
+}
+
+.card-container > .card-item > button {
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card-container > .card-item > button:hover {
+    background-color: #0056b3;
+}
+
+.card-container > .card-item:hover {
+    transform: translateY(-10px);
+}
+
+/* Parte dedicada a ajuda*/
+
+.low-container {
+    padding: 20px;
+    
+    background-color: rgb(161, 161, 161);
+}
+
+.low-container > .content {
+    font-size: 2em;
+    font-weight: bolder;
+    margin: 20px 0px 0px 7%;
+    max-width: 28%;
+    text-indent: 30px;
+    text-shadow: #00000056 0px 0px 5px;
+
+    background-color: red;
+}
+
+.quote-container {
+    display: flex;
+    margin: 150px 0px;
+    padding: 50px;
+    background-color: blue;
+}
+
+.quote-container > .quote {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 0px 0px 20px 7%;
+    padding-inline: 25px;
+    max-height: 100px;
+
+    background-color: orange;
+}
+
+.quote-container > .quote > img {
+    max-width: 7%;
+    transform: rotate(30deg);
+}
+
+.quote-container > .quote > p > span {
+    font-weight: bolder;
+    font-size: 1.1em;
+}
+
+.quote-container > .quote > p {
+    font-size: 1.3em;
+}
+
+.pix {
+    display: flex;
+    flex-direction: column;
+    column-gap: 20px;
+    max-width: 5%;
+}
+
+.pix > p {
+    margin: auto;
+    font-size: 3em;
+    font-weight: bolder;
+    color: rgb(131, 28, 131);
+    text-shadow: #00000056 0px 0px 5px;
+}
+
+.qrcode {
+    padding: 2px;
+}
+
+.qrcode > img {
+    max-width: 60%;
 }
