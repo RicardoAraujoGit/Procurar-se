@@ -12,15 +12,15 @@ body {
     font-size: 1em;
 }
 
-.menu-container > img {
-    max-width: 2em;
-    margin: 1.5em ;
+.menu-item > a > img {
+    max-width: 3em;
+    margin: 2% 0px 0px 2% ;
 }
 
 .top-container {
     display: flex;
     margin:  2em 5em;
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
     text-align: center;
 }
 
@@ -46,6 +46,16 @@ body {
     text-indent: 30px;
 }
 
+.top-container > article.content > h2 > .name {
+    color: #ffe241;
+    text-shadow: #0000000c 0px 0px 2px;
+}
+
+.top-container > article.content > h2 > .surname {
+    color: #ffbe5c;
+    text-shadow: #0000000c 0px 0px 2px;
+}
+
 .top-container > article.content > p {
     margin: 20px auto;
     max-width: 80%;
@@ -68,23 +78,18 @@ body {
     transition: 0.3s;
 }
 
-.top-container > article.picture > img:hover {
-    transition: 0.5s;
-    max-width: 55.5%;
-}
-
 .status-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 20px 0px 30px 0px;
-    background: linear-gradient(90deg, #ffda08 50%, #fd9902);
+    padding: 10px 0px 10px 0px;
+    background: linear-gradient(90deg, #ffe241 50%, #ffbe5c);
     text-shadow: #0000005d 3px 2px 5px;
 }
 
 .status-container > .status-item {
     text-align: center;
-    color: white;
+    color: #ffffff;
     font-weight: bold;
 }
 
@@ -104,28 +109,24 @@ body {
     font-size: 1.2em;
 }
 
-/* cards de apresentação dos trabalhos artesanais*/
-
 .middle-container {
     background-image: url("../images/icons/background.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     margin: 0px;
-    height: 1000px;
+    height: 50%;
     padding: 2px;
 }
 
 .middle-container > .content {
     font-size: 2em;
     font-weight: bolder;
-    margin: 20px 0px 0px 7%;
+    margin: 5% 0px 0px 7%;
     max-width: 28%;
     text-indent: 30px;
     text-shadow: #00000056 0px 0px 5px;
-    background-color: #e9e9e996;
     border-radius: 10px;
-    box-shadow: inset #00000009 0px 0px 4px 0px;
 }
 
 .card-container {
@@ -137,22 +138,32 @@ body {
 }
 
 .card-container > .card-item {
-    background-color: #f7f7f7e8;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px #0000003f;
-    padding: 7px;
-    width: 300px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #0000002a;
+    padding-bottom: 20px;
+    width: 320px;
     text-align: center;
-    transition: 0.3s;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5%);
+    }
 }
 
 .card-container > .card-item > img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .card-container > .card-item > p {
     color: #666;
+    padding-inline: 20px;
     margin-bottom: 2px;
     text-shadow: #00000048 0px 0px 2px;
 }
@@ -161,32 +172,32 @@ body {
     transform: translateY(-10px);
 }
 
-/* Parte dedicada a ajuda*/
-
 .low-container {
     padding: 20px;
 }
 
+.low-container > .content {
+    max-width: 50%;
+}
 
 .low-container > .content > h1{
     font-size: 2em;
     font-weight: bolder;
-    margin: 4% 0px 0px 6%;
-    max-width: 35%;
+    margin: 4% 0px 2% 6%;
+    max-width: 55%;
     text-indent: 30px;
     text-shadow: #00000056 0px 0px 5px;
 }
 
 .low-container > .content > p {
     font-size: 1em;
-    margin: 2% 0px 0px 6%;
-    max-width: 50%;
+    margin: 10px 0px 0px 6%;
+    max-width: 100%;
     text-indent: 30px;
 }
 
 .quote-container {
     display: flex;
-    padding: 50px;
     align-items: center;
 }
 
@@ -197,7 +208,7 @@ body {
     gap: 10%;
     margin: 0px 10% 20px 5%;
     padding: 30px;
-    box-shadow: inset rgba(141, 3, 196, 0.089) 0px 0px 20px 3px;
+    box-shadow: inset #8d03c411 0px 0px 20px 3px;
     border-radius: 10px;
 }
 
@@ -226,8 +237,14 @@ body {
     margin: auto;
     font-size: 4em;
     font-weight: bolder;
-    color: rgb(176, 12, 226);
-    text-shadow: #7507f1f3 0px 0px 5px;
+    color: #b00ce2;
+    text-shadow: #b879fff3 0px 0px 5px;
+    transition: 0.3s;
+}
+
+.pix > p:hover {
+    color: #d446ff;
+    text-shadow: #a150fff3 0px 0px 5px;
 }
 
 .qrcode {
@@ -237,4 +254,118 @@ body {
 
 .qrcode > img {
     max-width: 80%;
+    border-radius: 10px;
+    box-shadow: #00000018 0px 0px 10px 2px;
+}
+
+/* área de menu */
+
+#menu-container {
+    padding: 20px;
+    margin: 5% 0px;
+}
+
+#menu-container > .content {
+    max-width: 45%;
+}
+
+#menu-container > .content > h1 {
+    font-size: 2em;
+    font-weight: bolder;
+    margin: 4% 0px 2% 6%;
+    max-width: 55%;
+    text-indent: 30px;
+    text-shadow: #00000056 0px 0px 5px;
+}
+
+#menu-container > .content > p {
+    font-size: 1em;
+    margin: 10px 0px 0px 6%;
+    max-width: 100%;
+    text-indent: 30px;
+}
+
+#menu-container > .informations-container {
+    display: flex;
+    align-items: center;
+}
+
+#menu-container > .informations-container > .contact-container {
+    display: flex;
+    flex-direction: column;
+    padding: 80px;
+    margin: 5% 15% 20px 3%;
+    background-image: url("../images/icons/pessoa.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: 45%;
+}
+
+#menu-container > .informations-container > .contact-container > .instagram {
+    display: flex;
+    gap: 5%;
+    width: 600px;
+    align-items: center;
+    margin: 0px 0px 30px 0px;
+}
+
+#menu-container > .informations-container > .contact-container > .instagram  > p {
+    font-size: 1.3em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#menu-container > .informations-container > .contact-container > .instagram > a > img {
+    max-width: 75px;
+    margin: 0px 0px 0px 2%;
+}
+
+#menu-container > .informations-container > .contact-container > .telephone {
+    gap: 5%;
+    display: flex;
+    align-items: center;
+}
+
+#menu-container > .informations-container > .contact-container > .telephone > p {
+    font-size: 1.3em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#menu-container > .informations-container > .contact-container > .telephone > a > img {
+    max-width: 70px;
+    margin: 0px 0px 0px 2%;
+}
+
+#menu-container > .informations-container > .location-map > .location {
+    background-color: #070707;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: #00000018 0px 0px 10px 2px;
+    margin: 20% 0px 0px 0px;
+}
+
+#menu-container > .informations-container > .location-map > .location > p {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#menu-container > .informations-container > .location-map > .location > img {
+    max-width: 5%;
+    padding: 10px;
+}
+
+#menu-container > .informations-container > .location-map > .map {
+    background-color: #d1d1d1;
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: #00000018 0px 0px 10px 2px;
+}
+
+#menu-container > .informations-container > .location-map > .map > iframe {
+    border-radius: 10px;
 }
