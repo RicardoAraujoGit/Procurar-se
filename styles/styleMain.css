@@ -78,6 +78,8 @@ body {
     transition: 0.3s;
 }
 
+/* áres das Estátisticas */
+
 .status-container {
     display: flex;
     justify-content: space-around;
@@ -109,68 +111,81 @@ body {
     font-size: 1.2em;
 }
 
+/* área de amostra dos trabalhos */
+
 .middle-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
     background-image: url("../images/icons/background.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    margin: 0px;
-    height: 50%;
+    height: 750px;
     padding: 2px;
 }
 
 .middle-container > .content {
+    text-align: left;
+    margin: 2% 7% 0px 0px;
+    max-width: 40%;
+}
+
+.middle-container > .content > h1 {
     font-size: 2em;
     font-weight: bolder;
-    margin: 5% 0px 0px 7%;
-    max-width: 28%;
-    text-indent: 30px;
     text-shadow: #00000056 0px 0px 5px;
-    border-radius: 10px;
+    text-align: center;
+    margin: 0px 6%;
+}
+
+.middle-container > .content > p {
+    margin: 20px auto;
+    max-width: 90%;
+    word-spacing: 5px;
+    line-height: 20px;
+}
+
+.middle-container > .content > p > span {
+    font-weight: bolder;
+    font-size: 1.1em;
 }
 
 .card-container {
-    margin: 5% 10%;
+    padding-inline: 5%;
+    margin: 6% 2%;
     display: flex;
-    gap: 130px;
+    gap: 10px;
     flex-wrap: wrap;
-    justify-content: center;
+    height: 340px;
 }
 
 .card-container > .card-item {
-    background-color: #ffffff;
+    align-content: center;
+    text-align: center;
+    margin: 2% 0px;
     border-radius: 10px;
     box-shadow: 0 4px 8px #0000002a;
-    padding-bottom: 20px;
-    width: 320px;
-    text-align: center;
+    width:230px;
     animation: float 3s ease-in-out infinite;
 }
 
 @keyframes float {
     0%, 100% {
-      transform: translateY(0);
+      background-color: #f2f52883;
     }
     50% {
       transform: translateY(-5%);
+      background-color: #f7a71165;
     }
 }
 
 .card-container > .card-item > img {
-    width: 100%;
-    border-radius: 10px 10px 0px 0px;
+    width: 90%;
+    border-radius: 10px;
 }
 
-.card-container > .card-item > p {
-    color: #666;
-    padding-inline: 20px;
-    margin-bottom: 2px;
-    text-shadow: #00000048 0px 0px 2px;
-}
-
-.card-container > .card-item:hover {
-    transform: translateY(-10px);
-}
+/* área de doações */
 
 .low-container {
     padding: 20px;
@@ -194,6 +209,8 @@ body {
     margin: 10px 0px 0px 6%;
     max-width: 100%;
     text-indent: 30px;
+    word-spacing: 5px;
+    line-height: 20px;
 }
 
 .quote-container {
@@ -240,6 +257,7 @@ body {
     color: #b00ce2;
     text-shadow: #b879fff3 0px 0px 5px;
     transition: 0.3s;
+    
 }
 
 .pix > p:hover {
@@ -258,7 +276,7 @@ body {
     box-shadow: #00000018 0px 0px 10px 2px;
 }
 
-/* área de menu */
+/* área de menu/informações de contato */
 
 #menu-container {
     padding: 20px;
@@ -283,6 +301,8 @@ body {
     margin: 10px 0px 0px 6%;
     max-width: 100%;
     text-indent: 30px;
+    word-spacing: 5px;
+    line-height: 20px;
 }
 
 #menu-container > .informations-container {
@@ -298,7 +318,7 @@ body {
     background-image: url("../images/icons/pessoa.png");
     background-repeat: no-repeat;
     background-position-x: right;
-    background-size: 45%;
+    background-size: 35%;
 }
 
 #menu-container > .informations-container > .contact-container > .instagram {
@@ -345,7 +365,7 @@ body {
     text-align: center;
     border-radius: 10px 10px 0px 0px;
     box-shadow: #00000018 0px 0px 10px 2px;
-    margin: 20% 0px 0px 0px;
+    margin: 10% 0px 0px 0px;
 }
 
 #menu-container > .informations-container > .location-map > .location > p {
@@ -369,3 +389,5 @@ body {
 #menu-container > .informations-container > .location-map > .map > iframe {
     border-radius: 10px;
 }
+
+/* footer a partir daqui */
