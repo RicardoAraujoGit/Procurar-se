@@ -1,2 +1,525 @@
+@media (min-width: 450px) and (max-width: 820px) {
+    header > .menu-item > a > img{
+        max-width: 5%;
+    }
 
+    .top-container {
+        margin: auto;
+        text-align: center;
+        display: block;
+    }
+
+    .top-container > .content {
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .top-container > .picture {
+        margin: auto;
+        margin: 5% auto 10% auto;
+        width: 100%;
+    }
+
+    .top-container > .picture > img {
+        max-width: 320px;
+    }
+
+    .status-container {
+        height: 70px;
+    }
+
+    .status-container > .status-item > span {
+        font-size: 2em;
+    }
+
+    .status-container > .status-item > p {
+        font-size: 1em;
+    } 
+
+    .middle-container {
+        display: block;
+        max-height: 10%;
+    }
+
+    .middle-container > .content {
+        max-width: 100%;
+        margin: 5% auto;
+    }
+
+    .middle-container > .content > h1 {
+        font-size: 1.8em;
+    }
+
+    .card-container {
+        margin: 10% 0px;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .card-container > .card-item {
+        width: 200px;
+        height: 240px;
+    }
+
+    .card-container > .card-item > img {
+        max-width: 90%;
+    }
+
+    .low-container > .content {
+        background-color: white;
+        max-width: 100%;
+    }
+
+    .low-container > .content > h1 {
+        background-color: white;
+        max-width: 100%;
+    }
+
+    .low-container > .quote-container {
+        display: block;
+    }
+
+    .low-container > .quote-container > .quote {
+        max-width: 100%;
+        margin: 6% auto;
+        height: 100px;
+    }
+
+    .low-container > .quote-container > .quote > p {
+        font-size: 1.2em;
+    }
+
+
+    .low-container > .quote-container > .pix {        
+        display: flex;
+        text-align: center;
+        flex-direction: row;
+        max-width: 100px;
+        margin: auto;
+    }
+
+    .low-container > .quote-container > .pix > p {
+        margin: 0px;
+    }
+
+    .low-container > .quote-container > .qrcode {
+        margin: auto;
+        text-align: center;
+        max-width: 400px;
+    }
+
+    #menu-container > .content {
+        max-width: 100%;
+    } 
+
+    #menu-container > .content > h1 {
+        max-width: 100%;
+    }
+
+    #menu-container > .informations-container > .contact-container {
+        justify-content: center;
+        max-width: 500px;
+        height: 300px;
+        margin: 5% 6%;
+        padding: 0px;
+        background-size: 40%;
+        background-position: right;
+    }
+
+    #menu-container > .informations-container > .contact-container > .instagram {
+        max-width: 200px;
+        font-size: 0.9em;
+    }
+
+    #menu-container > .informations-container > .contact-container > .instagram > a > img {
+        max-width: 50px;
+    }
+
+    #menu-container > .informations-container > .contact-container > .telephone {
+        max-width: 200px;
+        font-size: 0.9em;
+    }
+
+    #menu-container > .informations-container > .contact-container > .telephone > a > img {
+        max-width: 50px;
+    }
+
+    #menu-container > .informations-container {
+        display: block;
+    }
+
+    #menu-container > .informations-container > .location-map {
+        margin: auto;
+        width: 500px;
+    }
+
+    #menu-container > .informations-container > .location-map > .map {
+       height: 200px; 
+       margin: 0px 0px 10% 0px;
+    }
+
+    #menu-container > .informations-container > .location-map > .map > iframe {
+        height: 200px;
+    }
+
+    .footer-container > .copyright {
+        font-size: 0.6em;
+        margin: auto;
+        max-width: 80%;
+    }
+
+    .footer-container > .creaters-container {
+        display: block;
+    }
+
+
+    .footer-container > .creaters-container > .names {
+        font-size: 0.7em;
+        max-width: 100%;
+    }
+
+    .footer-container > .creaters-container > .fuc {
+        margin: auto;
+        gap: 60px;
+        max-width: 57%;
+    }
+
+    .footer-container > .creaters-container > .fuc > img {
+        max-width: 80px;
+    }
+}
+
+@media (min-width: 821px) and (max-width: 1280px) {
+
+    header > .menu-item > a > img {
+        max-width: 4%;
+    }
+
+    .top-container {
+        display: block;
+    }
+
+    .top-container > .content {
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .top-container > .picture {
+        margin: auto;
+        max-width: 100%;
+    }
+
+    .top-container > .picture > img {
+        max-width: 400px;
+    }
+
+    .middle-container {
+        display: block;
+        max-height: 10%;
+    }
+
+    .middle-container > .content {
+        max-width: 100%;
+        margin: 5% auto;
+    }
+
+    .middle-container > .content > h1 {
+        font-size: 1.8em;
+    }
+
+    .card-container {
+        margin: 10% 0px;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .card-container > .card-item {
+        width: 200px;
+        height: 240px;
+    }
+
+    .card-container > .card-item > img {
+        max-width: 90%;
+    }
+
+    .low-container > .content {
+        background-color: white;
+        max-width: 100%;
+    }
+
+    .low-container > .content > h1 {
+        background-color: white;
+        max-width: 100%;
+    }
+
+    .low-container > .quote-container {
+        display: block;
+    }
+
+    .low-container > .quote-container > .quote {
+        max-width: 100%;
+        margin: 6% auto;
+        height: 100px;
+    }
+
+    .low-container > .quote-container > .quote > p {
+        font-size: 1.2em;
+    }
+
+    .low-container > .quote-container > .pix {        
+        display: flex;
+        text-align: center;
+        flex-direction: row;
+        max-width: 100px;
+        margin: auto;
+    }
+
+    .low-container > .quote-container > .pix > p {
+        margin: 0px;
+    }
+
+    .low-container > .quote-container > .qrcode {
+        margin: auto;
+        text-align: center;
+        max-width: 400px;
+    }
+
+    #menu-container > .content {
+        max-width: 100%;
+    } 
+
+    #menu-container > .content > h1 {
+        max-width: 100%;
+    }
+
+    #menu-container > .informations-container > .contact-container {
+        justify-content: center;
+        max-width: 700px;
+        height: 310px;
+        margin: 5% auto;
+        padding: 0px;
+        background-size: 40%;
+        background-position: right;
+    }
+
+    #menu-container > .informations-container > .contact-container > .instagram {
+        max-width: 200px;
+        font-size: 0.9em;
+    }
+
+    #menu-container > .informations-container > .contact-container > .instagram > a > img {
+        max-width: 70px;
+    }
+
+    #menu-container > .informations-container > .contact-container > .telephone {
+        max-width: 200px;
+        font-size: 0.9em;
+    }
+
+    #menu-container > .informations-container > .contact-container > .telephone > a > img {
+        max-width: 70px;
+    }
+
+    #menu-container > .informations-container {
+        display: block;
+    }
+
+    #menu-container > .informations-container > .location-map {
+        margin: auto;
+        width: 700px;
+    }
+
+    #menu-container > .informations-container > .location-map > .map {
+       height: 300px; 
+       margin: 0px 0px 10% 0px;
+    }
+
+    #menu-container > .informations-container > .location-map > .map > iframe {
+        height: 300px;
+    }
+
+    .footer-container > .copyright {
+        font-size: 0.8em;
+        margin: auto;
+        max-width: 80%;
+    }
+
+    .footer-container > .creaters-container {
+        display: block;
+    }
+
+
+    .footer-container > .creaters-container > .names {
+        font-size: 0.9em;
+        max-width: 100%;
+    }
+
+    .footer-container > .creaters-container > .fuc {
+        margin: auto;
+        gap: 60px;
+        max-width: 52%;
+    }
+
+    .footer-container > .creaters-container > .fuc > img {
+        max-width: 90px;
+    }
+}
+
+@media (min-width: 1281px) and (max-width: 1680px) {
+
+    .top-container {
+        margin: auto;
+        display: block;
+    }
+
+    .top-container > .content {
+        margin: auto;
+        max-width: 100%;
+    }
+
+    .top-container > .picture {
+        margin: 3% auto 6% auto;
+        max-width: 60%;
+    }
+
+    .top-container > .picture > img {
+        max-width: 600px;
+    }
+
+    .middle-container > .content {
+        align-items: start;
+        max-width: 50%;
+        height: 800px;
+    }
+
+    .middle-container > .content {
+        max-width: 70%;
+        margin: 0px auto;
+    }
+
+    .middle-container > .content > h1 {
+        font-size: 1.8em;
+    }
+
+    .card-container {
+        margin: 10% 0px;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .card-container > .card-item {
+        width: 200px;
+        height: 240px;
+    }
+
+    .card-container > .card-item > img {
+        max-width: 90%;
+    }
+
+    .low-container > .content {
+        max-width: 100%;
+        margin: 10% 0px;
+    }
+
+    .low-container > .quote-container > .quote {
+        font-size: 0.8em;
+        max-height: 150px;
+        max-width: 500px;
+    }
+
+    .low-container > .quote-container > .quote > img {
+        max-width: 15%;
+    }
+
+    .low-container > .quote-container > .pix > p {
+        font-size: 3em;
+    }
+
+    #menu-container > .content {
+        max-width: 100%;
+    } 
+
+    #menu-container > .content > h1 {
+        max-width: 100%;
+    }
+
+    #menu-container > .informations-container > .contact-container {
+        justify-content: center;
+        max-width: 90%;
+        height: 310px;
+        margin: 5% auto;
+        padding: 55px;
+        background-size: 30%;
+    }
+
+    #menu-container > .informations-container > .contact-container > .instagram {
+        max-width: 400px;
+        font-size: 0.9em;
+    }
+
+    #menu-container > .informations-container > .contact-container > .instagram > a > img {
+        max-width: 70px;
+    }
+
+    #menu-container > .informations-container > .contact-container > .telephone {
+        max-width: 500px;
+        font-size: 0.9em;
+    }
+
+    #menu-container > .informations-container > .contact-container > .telephone > a > img {
+        max-width: 70px;
+    }
+
+    #menu-container > .informations-container {
+        display: block;
+    }
+
+    #menu-container > .informations-container > .location-map {
+        margin: auto;
+        width: 70%;
+    }
+
+    #menu-container > .informations-container > .location-map > .map {
+       height: 400px; 
+       margin: 0px 0px 10% 0px;
+    }
+
+    #menu-container > .informations-container > .location-map > .map > iframe {
+        height: 400px;
+    }
+
+    .footer-container > .copyright {
+        font-size: 0.8em;
+        margin: auto;
+        max-width: 80%;
+    }
+
+    .footer-container > .creaters-container > .names {
+        font-size: 0.8em;
+        max-width: 100%;
+        padding: 20px;
+        margin: 0px;
+    }
+
+    .footer-container > .creaters-container > .names > p {
+        margin: 0px;
+        width: 335px;
+    }
+
+
+
+    .footer-container > .creaters-container > .fuc {
+        margin: 6% auto 0px auto;
+        gap: 60px;
+        max-width: 52%;
+    }
+
+    .footer-container > .creaters-container > .fuc > img {
+        max-width: 130px;
+    }
+
+}
 
