@@ -73,7 +73,7 @@ body {
 
 .top-container > article.picture > img {
     margin: 20px auto -10px auto;
-    width: 750px;
+    width: 650px;
     border-radius: 10px;
     box-shadow: #00000023 0px 0px 30px 1px;
     transition: 0.3s;
@@ -198,7 +198,6 @@ body {
     font-size: 2em;
     font-weight: bolder;
     margin: 4% 0px 2% 6%;
-    max-width: 55%;
     text-indent: 30px;
     text-shadow: #00000056 0px 0px 5px;
 }
@@ -290,7 +289,6 @@ body {
     font-size: 2em;
     font-weight: bolder;
     margin: 4% 0px 2% 6%;
-    max-width: 55%;
     text-indent: 30px;
     text-shadow: #00000056 0px 0px 5px;
 }
@@ -310,12 +308,14 @@ body {
 }
 
 #menu-container > .informations-container > .contact-container {
-    padding: 130px;
-    margin: 5% 10% 20px 3%;
+    padding: 70px;
+    margin: 5% 5% 20px 2%;
     background-image: url("../images/icons/pessoa.png");
     background-repeat: no-repeat;
     background-position-x: right;
-    background-size: 45%;
+    background-position-y: bottom;
+    background-size: 35%;
+
 }
 
 #menu-container > .informations-container > .contact-container > .instagram {
@@ -356,8 +356,8 @@ body {
 }
 
 #menu-container > .informations-container > .location-map {
-    width: 40%;
-    height: 50%;
+    width: 750px;
+    margin: 0px 0px 0px 2%;
 }
 
 #menu-container > .informations-container > .location-map > .location {
@@ -431,16 +431,17 @@ body {
 
 .footer-container > .creaters-container > .names > p {
     width: 400px;
-    font-size: 1em;
+    font-size: 0.8em;
     line-height: 30px;
 }
 
 .footer-container > .creaters-container > .fuc {
+    width: 900px;
     align-items: right;
-    margin: 2% auto 0px 30%;
+    margin: 5% 5% 0px 15%;
 }
 
 .footer-container > .creaters-container > .fuc > img {
-    max-width: 170px;
+    max-width: 155px;
     margin: 0px 20px
 }
